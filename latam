@@ -13,7 +13,7 @@ SCPT_DIR="/etc/SCRIPT"
 [[ ! -e ${SCPT_DIR} ]] && mkdir ${SCPT_DIR}
 INSTA_ARQUIVOS="ADMVPS.zip"
 DIR="/etc/http-shell"
-LIST="$(echo "NewVPS-" | rev)"
+LIST="$(echo "drowk-" | rev)"
 [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")"
 
 gerar_key () {
@@ -54,13 +54,13 @@ bot_retorno+=" 🗝️  <pre>${keyfinal}</pre> 🗝️\n"
 bot_retorno+="$LINE\n"
 bot_retorno+="  🛡️  𝙸𝚗𝚜𝚝𝚊𝚕𝚊𝚍𝚘𝚛  𝙾𝚏𝚒𝚌𝚒𝚊𝚕 $(cat < /etc/SCRIPT/v-local.log) 🔐 \n"
 bot_retorno+="$LINE\n"
-bot_retorno+='<pre>apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/drowkid-1/LATAM/kalix1/instvlvdor/LATAM && chmod 777 LATAM && ./LATAM --start</pre>\n'
+bot_retorno+='<pre> apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/drowkid-1/LATAM/kalix1/instvlvdor/LATAM && chmod 777 LATAM && ./LATAM --start </pre>\n'
 bot_retorno+="$LINE\n"
 bot_retorno+="     𝙍𝙚𝙘𝙤𝙢𝙚𝙣𝙙𝙖𝙙𝙤 𝙐𝙗𝙪𝙣𝙩𝙪 18.04 \n   🧬🧬 S.O Ubuntu 14 a 22 X64(x86|ARM) 🧬🧬 \n          Debian 7,8,9,11 (x64) \n  🪦 ADQUIERE TU ACCESO EN @${nBot} 🛡️⚔️\n"
 bot_retorno+="$LINE\n"
 msj_fun
 bot_file+="  🛡️  𝙸𝚗𝚜𝚝𝚊𝚕𝚊𝚍𝚘𝚛  𝙾𝚏𝚒𝚌𝚒𝚊𝚕 $(cat < /etc/SCRIPT/v-local.log) 🛡️ \n\n"
-bot_file+="apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/drowkid-1/LATAM/kalix1/instvlvdor/LATAM && chmod 777 LATAM && ./LATAM --start</pre>\n"
+bot_file+="<pre> apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/drowkid-1/LATAM/kalix1/instvlvdor/LATAM && chmod 777 LATAM && ./LATAM --start </pre>\n"
 bot_file+="  ${keyfinal} \n"
 echo -e ${bot_file} > ${keytxt}/key_${usrLOP}.txt
 upfile_fun ${keytxt}/key_${usrLOP}.txt
